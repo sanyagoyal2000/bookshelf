@@ -9,28 +9,28 @@ function Header() {
           src:"https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c11.jpeg",
           altText: "Slide 1",
           caption: "",
-          header: "Pustak Online Library",
+          header: "",
           key: "1",
         },
         {
           src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c6.jpeg",
           altText: "Slide 2",
           caption: "",
-          header: "Pustak Online Library",
+          header: "",
           key: "2",
         },
         {
             src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c10.jpeg",
             altText: "Slide 3",
             caption: "",
-            header: "Pustak Online Library",
+            header: "",
             key: "3",
           },
           {
             src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c9.jpeg",
             altText: "Slide 4",
             caption: "",
-            header: "Pustak Online Library",
+            header: "",
             key: "4",
           },
          
@@ -40,9 +40,9 @@ function Header() {
             
          <Row>
         
-    <Col md="5" className="mx-auto w-full h-1/5 mt-0">
+    <Col md="5" className="mx-auto relative w-full h-[400px] mt-0">
         
-      <UncontrolledCarousel items={items}  />
+      <UncontrolledCarousel items={items} />
     </Col>
   </Row>   
         </div>

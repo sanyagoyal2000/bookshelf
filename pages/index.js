@@ -40,6 +40,8 @@ export default function Home() {
       <div >
         <Nav/>
         <Header/>
+        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+        
         <Footer/>
       </div>
       </>
