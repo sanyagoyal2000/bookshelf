@@ -12,14 +12,14 @@ function Header() {
           key: "1",
         },
         {
-          src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c4.jpeg",
+          src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c6.jpeg",
           altText: "Slide 2",
           caption: "",
           header: "",
           key: "2",
         },
         {
-            src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c7.jpeg",
+            src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c6.jpeg",
             altText: "Slide 3",
             caption: "",
             header: "",
@@ -30,7 +30,7 @@ function Header() {
     return (
         <div >
          <Row>
-    <Col md="8" className="mx-auto w-full h-1/3 mt-0">
+    <Col md="5" className="mx-auto w-full h-1/5 mt-0">
       <UncontrolledCarousel items={items}  />
     </Col>
   </Row>   
