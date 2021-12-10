@@ -5,6 +5,8 @@ import Loader from "../components/Loader";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import Book from "../components/Book";
+
 
 
 export default function Home() {
@@ -40,8 +42,10 @@ export default function Home() {
       <div >
         <Nav/>
         <Header/>
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-        
+        <br/> <br/> <br/>
+        <Book className="max-w-7xl"/>
+        <br/> <br/> <br/>
+
         <Footer/>
       </div>
       </>
