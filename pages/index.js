@@ -3,6 +3,9 @@ import Head from 'next/head'
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -35,7 +38,9 @@ export default function Home() {
         <Loader/>
        :(<>
       <div >
+        <Nav/>
         <Header/>
+        <Footer/>
       </div>
       </>
       )}
