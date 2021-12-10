@@ -9,34 +9,34 @@ function Header() {
           src:"https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c11.jpeg",
           altText: "Slide 1",
           caption: "",
-          header: "",
+          header: "Pustak Online Library",
           key: "1",
         },
         {
           src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c6.jpeg",
           altText: "Slide 2",
           caption: "",
-          header: "",
+          header: "Pustak Online Library",
           key: "2",
         },
         {
             src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c10.jpeg",
             altText: "Slide 3",
             caption: "",
-            header: "",
+            header: "Pustak Online Library",
             key: "3",
           },
           {
             src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c9.jpeg",
             altText: "Slide 4",
             caption: "",
-            header: "",
+            header: "Pustak Online Library",
             key: "4",
           },
          
       ];
     return (
-        <div >
+        <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
             
          <Row>
         
