@@ -18,7 +18,13 @@ function Header() {
           header: "",
           key: "2",
         },
-        
+        {
+            src: "https://raw.githubusercontent.com/sanyagoyal2000/bookshelf/main/components/img/c7.jpeg",
+            altText: "Slide 3",
+            caption: "",
+            header: "",
+            key: "3",
+          },
          
       ];
     return (
