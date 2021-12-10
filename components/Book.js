@@ -50,6 +50,7 @@ function Book() {
                         <p className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><i>Author(s): {book.volumeInfo.authors && book.volumeInfo.authors.length > 1 ? book.volumeInfo.authors.join(", ") : book.volumeInfo.authors}</i></p>
                           
                         </div>
+                        <div className="flex">
                         <Button
             color="lime"
             buttonType="filled"
@@ -59,9 +60,20 @@ function Book() {
             iconOnly={false}
             ripple="light"
             className="bg-lime-500 m-auto rounded-md"
-            >READ
+            ><a href={book.volumeInfo.previewLink} target="_blank">Read</a>
                 </Button>
-                        </div> 
+                <Button
+            color="lime"
+            buttonType="filled"
+            size="regular"
+            rounded={false}
+            block={false}
+            iconOnly={false}
+            ripple="light"
+            className="bg-red-400 m-auto rounded-md"
+            ><a href={book.volumeInfo.previewLink} target="_blank">Save</a>
+                </Button>
+                        </div> </div>
                              
                     ))}  
                 </div>  
