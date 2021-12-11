@@ -83,7 +83,7 @@ function Book() {
             iconOnly={false}
             ripple="light"
             className="bg-red-400 m-auto rounded-md"
-            ><a href={book.volumeInfo.previewLink} target="_blank">Save</a>
+            ><a href={book.volumeInfo.previewLink} target="_blank">Bookmark</a>
                 </Button>
                         </div> </div>
                              
