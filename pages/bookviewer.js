@@ -3,7 +3,7 @@ import {useState,useEffect, useRef} from "react";
 import {useRouter} from "next/dist/client/router";
 
 function BookViewer() {
-    const [embedURL]=useState("https://read.bookcreator.com/aWAhdfUWXPQR1UPW7fJOHnfObsb2/_or2hLPmR3WlS34sPH_WKQ");     
+    const [embedURL]=useState("https://books.google.co.in/books?id=LbnwCQAAQBAJ&newbks=0&lpg=PP1&dq=harry%20potter&pg=PR3&output=embed");     
    const router = useRouter();
    const ISBN_num = router.query;
 
