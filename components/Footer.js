@@ -11,7 +11,7 @@ function Footer() {
     return (
       
 
-<footer className="flex flex-col h-50 w-full static bottom-0 bg-gray-100 pt-20 pb-2">
+<footer className="flex flex-col h-50 w-full  bg-gray-100 pt-20 mb-0">
   <div className="container mx-auto px-4">
     <div className="flex flex-wrap text-left lg:text-left">
       <div className="w-full lg:w-6/12 px-4">

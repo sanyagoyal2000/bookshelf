@@ -9,7 +9,3 @@ npm run dev
 to run this in your local environment
 
 
-# Video link on youtube
-<br/>
-
-https://youtu.be/fZbO8woImKk

@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React, {useState,useEffect } from 'react';
+import {useRouter} from "next/dist/client/router";
 
 
 function Nav() {
     const [handleShow, setHandleShow] = useState(false);
+    const router=useRouter();
     useEffect(() => {
         const listener = () => {
            if (window.scrollY > 80) {

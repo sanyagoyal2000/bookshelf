@@ -1,12 +1,16 @@
 import  { useState } from "react";  
 import axios from 'axios';  
 import Button from "@material-tailwind/react/Button";
+import {useRouter} from "next/dist/client/router";
+
+import Link from "next/link"
 
 function Book() {
     const [book, setBook] = useState("");  
     const [result, setResult] = useState([]);  
     const [apiKey, setApiKey] = useState("AIzaSyCqi37mzRrzkBrDZDb0BX9_IarX5iMOT88");
-  
+    const [isbn,setIsbn]=useState("");
+    const router=useRouter()
     function handleChange(event) {  
         const book = event.target.value;  
         setBook(book);  
@@ -19,6 +23,7 @@ function Book() {
                 setResult(data.data.items);  
             })  
     }  
+   
     return (  
         <div className="pt-6  max-w-7xl px-8 mx-auto sm:px-16">
         <h2 
@@ -60,8 +65,15 @@ function Book() {
             iconOnly={false}
             ripple="light"
             className="bg-lime-500 m-auto rounded-md"
-            ><a href={book.volumeInfo.previewLink} target="_blank">Read</a>
-                </Button>
+            onClick= {() =>{
+                router.push({
+                    pathname: "bookviewer",
+                    query: {
+                      ISBN_num:book.volumeInfo.isbn
+                    },
+                  })}}
+            
+            >Read </Button>
                 <Button
             color="lime"
             buttonType="filled"
@@ -82,3 +94,11 @@ function Book() {
     )}
 
 export default Book
+export async function getServerSideProps(context){
+    await fetch("https://jsonkeeper.com/b/29X0").then((res)=>res.json());
+    const session=await getSession(context);
+    return {
+      props:{searchResults},
+      session
+    }
+  }
